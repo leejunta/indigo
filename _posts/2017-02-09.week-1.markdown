@@ -74,7 +74,7 @@ Suppose we ran a straight horizontal line through the following points (see belo
  
 ### Cost Function `J`
 So what does the cost look like? For a linear regression, the cost function, `J(theta)`, to indicate the difference in distance between the actual points and the line:
-EQUATION  
+$$J(\theta) = \frac{1}{2m}\displaystyle\sum\limits_{i=1}^{m}(h_{\theta}(x)^i-y^i)^2$$ 
 We sum each residual square and divide by `m`, the number of points, to get an average of the residual squares.  
 *NOTE: we also divide by two because of convention. There is nothing special about `2` other than it will make some computations make sense later.*  
  
