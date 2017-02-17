@@ -62,10 +62,10 @@ Before going into the details, here are some labels to make our lives easier:
 `X` = an `m` by `(n+1)` matrix of all the values for each observation and independent variable (aka features)  
 *NOTE: `X` is `m` by `(n+1)` because we add as the first column a column of `1`s. Ask me if you’re curious why.*  
 `Y` = an `m` by `1` matrix of all the values for the response variable  
-superscript `i` = indicates the `i`th observation (`y^i^` = response value of the ith observation)  
+superscript `i` = indicates the `i`th observation (`y^i` = response value of the ith observation)  
 subscript `j` = indicates the `j`th variable  
 `x_j_` = `j`th column of `X`  
-`x^I^` = `i`th row of X  
+`x^i` = `i`th row of X  
 Now we can get into how to run a linear regression.  
 
 ### Initial trial  
@@ -83,7 +83,7 @@ Notice that the cost function `J` has a squared value, so if you plotted `J` as 
 ![alt text][parabola]
 Thus, we want to change our theta values so that `J` gets closer and closer to the minimum of the parabola. This idea of iterating different values of theta till we reach the minimum (convergence) is called an optimization method. The optimization we will use is called gradient descent, or steepest descent. We update the parameters, theta, using the following equation:  
 EQUATION
-*NOTE: each theta needs to be updated simultaneously. i.e. for each iteration, update the theta values after computing theta for each `i=1,2,…,n`. The first parameter `theta_0_` is different from the other parameters based on convention.*  
+*NOTE: each theta needs to be updated simultaneously. i.e. for each iteration, update the theta values after computing theta for each `i=1,2,…,n`. The first parameter `theta_0` is different from the other parameters based on convention.*  
 You can get the partial derivative using basic calculus. Try it out.  
 
 This equation makes sense because if you start on the left side of the parabola, then the derivative is negative, so subtracting a negative value, we get a higher value for theta. That means, we are closer to the parabola. You can repeat it till you change theta to be where the parabola is at its minimum. The same logic works when you start on the right side of the parabola.  
