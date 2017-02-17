@@ -1,6 +1,6 @@
 ---
 title: "Data Science at Grinnell College"
-layout: post
+layout: project
 date: 2016-02-09
 image: /assets/images/markdown.jpg
 headerImage: false
