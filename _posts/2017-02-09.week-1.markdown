@@ -66,36 +66,40 @@ superscript `i` = indicates the `i`th observation (`y^i` = response value of the
 subscript `j` = indicates the `j`th variable  
 `x_j_` = `j`th column of `X`  
 `x^i` = `i`th row of X  
-Now we can get into how to run a linear regression.  
+`theta` = vector containing all the parameters of a model  
+`theta_0` = intercept of the model   
+We will study how to implement the regression model using one feature. Now we can get into how to run a linear regression.  
 
 ### Initial trial  
 Suppose we ran a straight horizontal line through the following points (see below). We call the equation of this line `h_theta(x)`. That looks pretty terrible, so we can guess that the cost will be high.
-![alt text][week1graph1]  
+![graph1][week1graph1]  
  
 ### Cost Function `J`
-So what does the cost look like? For a linear regression, the cost function, `J(theta)`, to indicate the difference in distance between the actual points and the line:
-$$J(\theta) = \frac{1}{2m}\displaystyle\sum\limits_{i=1}^{m}(h_{\theta}(x)^i-y^i)^2$$ 
+So what does the cost look like? For a linear regression, the cost function is `J(theta_0,theta_1)`. Here `theta_0` corresponds to the intercept and `theta_1` corresponds to the slope of the linear model. This cost function indicates the difference in distance between the actual points and the line:  
+![equation1][week1J]
 We sum each residual square and divide by `m`, the number of points, to get an average of the residual squares.  
 *NOTE: we also divide by two because of convention. There is nothing special about `2` other than it will make some computations make sense later.*  
  
 ### Reducing the Cost Function `J`
-Notice that the cost function `J` has a squared value, so if you plotted `J` as a function of theta, we would get a parabola:  
-![alt text][parabola]
+Notice that the cost function `J` has a squared value, so if you plotted `J` as a function of any theta, we would get a parabola:  
+![graph2][parabola]  
 Thus, we want to change our theta values so that `J` gets closer and closer to the minimum of the parabola. This idea of iterating different values of theta till we reach the minimum (convergence) is called an optimization method. The optimization we will use is called gradient descent, or steepest descent. We update the parameters, theta, using the following equation:  
-EQUATION
-*NOTE: each theta needs to be updated simultaneously. i.e. for each iteration, update the theta values after computing theta for each `i=1,2,…,n`. The first parameter `theta_0` is different from the other parameters based on convention.*  
-You can get the partial derivative using basic calculus. Try it out.  
+![equation2][week1theta]  
+*NOTE: each theta needs to be updated simultaneously. i.e. for each iteration, update the theta values after computing theta for each `i=1,2,…,n`.*  
+You can get the partial derivative using basic calculus:  
+![equation3][week1der]    
 
 This equation makes sense because if you start on the left side of the parabola, then the derivative is negative, so subtracting a negative value, we get a higher value for theta. That means, we are closer to the parabola. You can repeat it till you change theta to be where the parabola is at its minimum. The same logic works when you start on the right side of the parabola.  
 
 We give alpha as a parameter to this algorithm to determine how large the steps are per iteration. On one hand, if alpha is tiny, then you will move towards the center of the parabola in tiny steps, making the algorithm take a loooong time. On the other hand, if alpha is huge, then each iteration may move you from the left side of the parabola to the right over and over again. In which case you would be stuck in an infinite loop, never reaching the minimum. You have to figure out what alpha works best.
  
 Once the algorithm converges, you now have the optimized parameters, theta, which will fit the best line through your points:
-![alt text][week1graph2]
+![graph3][week1graph2]
  
 ### Final Comments
 One important comment is that when we implement these optimization methods with large data sets, `for` loops start to become pretty inefficient, so we use a concept called vectorization. This is just a fancy way of saying forget the `for` loops when using matrices and vectors. Instead, use matrix algebra which are highly optimized instead. Here are the implementations using vectorization:  
-EQUATIONS  
+![equation4][week1vecJ]  
+![equation5][week1vectheta]  
 Lastly, I want to mention that gradient descent is not the only optimization method that works for linear regression. Another commonly used one is the normal equation, which is actually much simpler, but is slow for large data sets. You can find the derivation and the equation here:
 http://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression/
  
@@ -103,6 +107,11 @@ http://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-r
 Next week, we will learn about feature scaling and regularization to thoroughly implement linear regression.  
 
 
-[week1graph1]: assets/R/week1graph1.png
+[week1graph1]: assets/R/week1graph1.png?raw=true
 [week1graph2]: assets/R/week1graph2.png
-[parabola]: assets/R/parabola.png
+[parabola]: assets/R/parabola.pngi
+[week1J]: assets/equations/week1J.gif
+[week1theta]: assets/equations/week1theta.gif
+[week1der]: assets/equations/week1der.gif
+[week1vectheta]: assets/equations/week1vectheta.gif
+[week1vecJ]: assets/equations/week1vecJ.gif
