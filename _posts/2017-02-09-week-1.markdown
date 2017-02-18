@@ -108,10 +108,10 @@ Next week, we will learn about feature scaling and regularization to thoroughly 
 
 
 [week1graph1]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/week1figure1.png 
-[week1graph2]: https://raw.githubusercontent.com/leejunta/juntaeklee/blob/gh-pages/assets/R/week1graph2.png
-[parabola]: https://raw.githubusercontent.com/leejunta/juntaeklee/blob/gh-pages/assets/R/parabola.png
-[week1J]: https://raw.githubusercontent.com/leejunta/juntaeklee/blob/gh-pages/assets/equations/week1J.gif
-[week1theta]: https://raw.githubusercontent.com/leejunta/juntaeklee/blob/gh-pages/assets/equations/week1theta.gif
-[week1der]: https://raw.githubusercontent.com/leejunta/juntaeklee/blob/gh-pages/assets/equations/week1der.gif
-[week1vectheta]: https://raw.githubusercontent.com/leejunta/juntaeklee/blob/gh-pages/assets/equations/week1vectheta.gif
-[week1vecJ]: https://raw.githubusercontent.com/leejunta/juntaeklee/blob/gh-pages/assets/equations/week1vecJ.gif
+[week1graph2]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/week1graph2.png
+[parabola]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/parabola.png
+[week1J]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1J.gif
+[week1theta]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1theta.gif
+[week1der]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1der.gif
+[week1vectheta]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1vectheta.gif
+[week1vecJ]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1vecJ.gif
