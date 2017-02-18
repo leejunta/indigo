@@ -17,8 +17,8 @@ description: Implementing linear regression from scratch
 # Data Science Introduction and Linear Regression
 
 This week, we talked about the basics of data science, machine learning, and the implementation of linear regression from scratch. Admittedly, I did a poor job structuring how I talked about linear regression, so here’s a better version (summary) of what we talked about. Next week, we will talk about two concepts used in regression models called feature scaling and regularization.
-Here’s a nice link if you want to learn about it before next week:
-https://datanice.github.io/machine-learning-101-what-is-regularization-interactive.html
+Here’s a nice link if you want to learn about it before next week:  
+<https://datanice.github.io/machine-learning-101-what-is-regularization-interactive.html>  
  
 Let me know if you have any questions.
  
