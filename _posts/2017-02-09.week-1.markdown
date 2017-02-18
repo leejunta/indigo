@@ -72,7 +72,7 @@ We will study how to implement the regression model using one feature. Now we ca
 
 ### Initial trial  
 Suppose we ran a straight horizontal line through the following points (see below). We call the equation of this line `h_theta(x)`. That looks pretty terrible, so we can guess that the cost will be high.
-![graph1][week1graph1]  
+![Alt text][week1graph1]  
  
 ### Cost Function `J`
 So what does the cost look like? For a linear regression, the cost function is `J(theta_0,theta_1)`. Here `theta_0` corresponds to the intercept and `theta_1` corresponds to the slope of the linear model. This cost function indicates the difference in distance between the actual points and the line:  
@@ -107,11 +107,11 @@ http://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-r
 Next week, we will learn about feature scaling and regularization to thoroughly implement linear regression.  
 
 
-[week1graph1]: assets/R/week1graph1.png?raw=true
-[week1graph2]: assets/R/week1graph2.png
-[parabola]: assets/R/parabola.pngi
-[week1J]: assets/equations/week1J.gif
-[week1theta]: assets/equations/week1theta.gif
-[week1der]: assets/equations/week1der.gif
-[week1vectheta]: assets/equations/week1vectheta.gif
-[week1vecJ]: assets/equations/week1vecJ.gif
+[week1graph1]: https://github.com/leejunta/juntaeklee/blob/gh-pages/assets/R/week1figure1.png 
+[week1graph2]: https://github.com/leejunta/juntaeklee/blob/gh-pages/assets/R/week1graph2.png
+[parabola]: https://github.com/leejunta/juntaeklee/blob/gh-pages/assets/R/parabola.png
+[week1J]: https://github.com/leejunta/juntaeklee/blob/gh-pages/assets/equations/week1J.gif 
+[week1theta]: https://github.com/leejunta/juntaeklee/blob/gh-pages/assets/equations/week1theta.gif
+[week1der]: https://github.com/leejunta/juntaeklee/blob/gh-pages/assets/equations/week1der.gif
+[week1vectheta]: https://github.com/leejunta/juntaeklee/blob/gh-pages/assets/equations/week1vectheta.gif
+[week1vecJ]: https://github.com/leejunta/juntaeklee/blob/gh-pages/assets/equations/week1vecJ.gif
