@@ -44,7 +44,7 @@ Since we have updated our cost function to include the regularization term, taki
 We can then substitute this partial derivative to update our parameters. **We will talk about how to choose `lambda` properly in the future**. Now that we have added our regularization term, we can hopefully get a better model with out-of-sample predictability!  
 
 ## Feature Scaling
-But wait--there's more (http://s2.quickmeme.com/img/a7/a78ae76da19c1a0f9e0e9b2f7e6229e70bd36cf7bc5b2f29b5f8900face50234.jpg; RIP Billy Mays). Let's consider a case where our parameters vector `theta` has parameters with vastly different values. For example, let us consider using a linear regression to predict the values of houses. Some obvious features we might use to predict house price are house size, room numbers, and number of bathrooms. Then we might have the following: 
+But wait--there's more (http://s2.quickmeme.com/img/a7/a78ae76da19c1a0f9e0e9b2f7e6229e70bd36cf7bc5b2f29b5f8900face50234.jpg; RIP Billy Mays). Let's consider a case where our parameters vector `theta` has parameters with vastly different values. For example, let us consider using a linear regression to predict the values of houses. Some obvious features we might use to predict house price are house size, room numbers, and number of bathrooms. Then we might have the following:   
 ![Table for House Price Data][week2table]  
 Running a simple linear regression gives us the following values:  
 ```
