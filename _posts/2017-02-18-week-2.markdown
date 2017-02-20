@@ -1,13 +1,13 @@
 ---
 title: "Week 2 Summary - Regularization"
 layout: post
-date: 2017-02-09
+date: 2017-02-18
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
 - datascience
 - GrinellCollege
-- linearregression 
+- regularization
 category: blog
 author: juntaeklee
 description: Adding a regularization term to regression models 
