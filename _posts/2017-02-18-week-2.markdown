@@ -23,4 +23,10 @@ Since HackISU is next weekend and I will be there, we won't be meeting next week
 This week, we talked about regularization. In all of our statistics courses at Grinnell, there is no mention about regularization, but it is an essential concept in data science. You'll see it used in logistic regression models, artificial neural networks, and many other algorithms. We can add a regularization for linear regressions as well, but as we'll find, it is not as useful for simple linear regressions. 
 
 ## What is regularization?  
-According to Wikipedia, regularization "refers to a process introducing additional information in order to solve an ill-posed problem or to prevent overfitting." In other words, we use regularization terms to ensure that when we train a model, we do not overfit the model. We want the model to be applicable to data outside of the ones we used to train the model itself.  
+According to Wikipedia, regularization "refers to a process introducing additional information in order to solve an ill-posed problem or to prevent overfitting." In other words, we use regularization terms to ensure that when we train a model, we do not overfit the model. If you have not heard of the overfitting problem, you will hear about it a lot in the context of data science. Given that we have some amount of data, it's not too difficult to fit a model that catches every single point exactly (e.g. for a data set with 10 points, use a 10th degree polynomial!). In predictive modeling, however, our goal is to build a model that can predict data the model has not seen yet. Regularization is what we use to make our models a little more robust in the context of overfitting. We can implement regularization into any supervised learning model.  
+
+## So how do we do this?  
+Last week, we talked about the structure of machine learning problems. The regularization term will be added to the steps concerning the cost function and the optimization of our model parameters. To be less abstract, let's see how this applies to the linear regression we learned last week!  
+
+First, let's start with how we apply regularization into the cost function. Recall from last week that the cost function for linear regression models is:  
+

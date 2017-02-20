@@ -89,7 +89,7 @@ Thus, we want to change our theta values so that `J` gets closer and closer to t
 You can get the partial derivative using basic calculus:  
 ![Partial Derivative][week1der]  
 
-This equation makes sense because if you start on the left side of the parabola, then the derivative is negative, so subtracting a negative value, we get a higher value for theta. That means, we are closer to the parabola. You can repeat it till you change theta to be where the parabola is at its minimum. The same logic works when you start on the right side of the parabola.  
+This equation makes sense because if you start on the left side of the parabola, then the derivative is negative, so subtracting a negative value, we get a higher value for theta. That means, we are closer to the parabola. You can then use a `while` loop or `repeat` loop till you change theta till the parabolic cost function is at its global minimum. The same logic works when you start on the right side of the parabola.  
 
 We give alpha as a parameter to this algorithm to determine how large the steps are per iteration. On one hand, if alpha is tiny, then you will move towards the center of the parabola in tiny steps, making the algorithm take a loooong time. On the other hand, if alpha is huge, then each iteration may move you from the left side of the parabola to the right over and over again. In which case you would be stuck in an infinite loop, never reaching the minimum. You have to figure out what alpha works best.
  
