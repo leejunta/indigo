@@ -41,7 +41,7 @@ where the partial derivative of our cost function is
 ![Linear Regression Partial Derivative][week1der].  
 Since we have updated our cost function to include the regularization term, taking the derivative of the new cost function, we get  
 ![Partial Derivative with Regularization][week2der].  
-We can then substitute this partial derivative to update our parameters. Now that we have added our regularization term, we can hopefully get a better model with out-of-sample predictability!  
+We can then substitute this partial derivative to update our parameters. **We will talk about how to choose `lambda` properly in the future**. Now that we have added our regularization term, we can hopefully get a better model with out-of-sample predictability!  
 
 ## Feature Scaling
 But wait--there's more (http://s2.quickmeme.com/img/a7/a78ae76da19c1a0f9e0e9b2f7e6229e70bd36cf7bc5b2f29b5f8900face50234.jpg; RIP Billy Mays). Let's consider a case where our parameters vector `theta` has parameters with vastly different values. For example, let us consider using a linear regression to predict the values of houses. Some obvious features we might use to predict house price are house size, room numbers, and number of bathrooms. Then we might have the following: 
@@ -52,7 +52,17 @@ theta_0 = -68872.3
 theta_1 = 160.6  
 theta_2 = 8539.7  
 ```
-Do you see the problem here? When we use add the regularization term, it will put a larger weight on `theta_0` and then `theta_1` and lastly `theta_2`. However, there is nothing special about `theta_0` other than the fact that the scale used for its respective feature is larger. So how do we go about fixing this problem? We use feature scaling. This is another way of saying *normalization*. You can just create *t* statistics out of out feature in the data set and fead that into the algorithm to weigh each feature equally.  
+Do you see the problem here? When we use add the regularization term, it will put a larger weight on `theta_0` and then `theta_1` and lastly `theta_2`. However, there is nothing special about `theta_0` other than the fact that the scale used for its respective feature is larger. So how do we go about fixing this problem? We use feature scaling. This is another way of saying *normalization*. You can just create *t* statistics out of out feature in the data set and feed that into the algorithm to weigh each feature equally.  
+![t-statistic][week2t]  
+There are other ways of feature scaling, but I personally like this one.  
+
+*NOTE: Feature scaling actually helps run the gradient descent algorithm for linear regression run faster as well. Think about why that might be.*  
+
+## Final Comments   
+If you include everything we have talked about from last week and this week, you have covered the general structure of most supervised learning algorithms and have learned how to build one of them, linear regression. You will actually find that regularization has little effect on strictly linear regressions, but as we explore more complicated models, regularization will work wonders.  
+
+## Up next...  
+Like I mentioned, we will not be meeting next week because of the hackathon. The following week (week 4), I will talk about logistic regression! See you all in two weeks.
 
 
 
@@ -62,6 +72,7 @@ Do you see the problem here? When we use add the regularization term, it will pu
 [week1der]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1der.gif
 [week2der]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1der.gif
 [week2table]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week2table.gif
+[week2t]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week2t.gif
 
 
 
