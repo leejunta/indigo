@@ -29,4 +29,14 @@ According to Wikipedia, regularization "refers to a process introducing addition
 Last week, we talked about the structure of machine learning problems. The regularization term will be added to the steps concerning the cost function and the optimization of our model parameters. To be less abstract, let's see how this applies to the linear regression we learned last week!  
 
 First, let's start with how we apply regularization into the cost function. Recall from last week that the cost function for linear regression models is:  
+![Linear Regression Cost][week1J]  
+We penalize the cost function by adding a regularization that we can adjust using a parameter `lambda`. The new cost function is:
+![J with Regularization][week2J]
+
+
+
+
+
+[week1J]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1J.gif
+[week2J]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week2J.gif
 
