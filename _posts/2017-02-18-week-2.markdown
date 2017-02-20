@@ -31,7 +31,7 @@ Last week, we talked about the structure of machine learning problems. The regul
 First, let's start with how we apply regularization into the cost function. Recall from last week that the cost function for linear regression models is:  
 ![Linear Regression Cost][week1J]  
 We penalize the cost function by adding a regularization that we can adjust using a parameter `lambda` greater than or equal to 0. The new cost function is:
-![J with Regularization][week2J]
+![J with Regularization][week2J]  
 Notice that we added an extra summation term. This is the regularization. Notice that if we increase lambda to infinity, our overfit model will be trivial and if we decrease lambda to 0, the regularization is trivial leaving the overfit model. Based on the extremes, we can see that the regularization actually accounts for overfitting. Thus, we can think of the cost function as a balance between the linear regression cost function, which is an overfitting term, and the regularization term, which is an underfitting term.  
 *NOTE: In some supervised learning algorithms, we use `C`, which is the inverse of `lambda`. `C` is then multiplied by the model instead of the regularization term.*  
 
@@ -40,14 +40,15 @@ Next, we apply the regularization term to the optimization of the model paramete
 where the partial derivative of our cost function is  
 ![Linear Regression Partial Derivative][week1der].  
 Since we have updated our cost function to include the regularization term, taking the derivative of the new cost function, we get  
-
-
+![Partial Derivative with Regularization][week2der].  
+We can then substitute this partial derivative to update our parameters.   
 
 
 [week1J]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1J.gif
 [week2J]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week2J.gif
 [week1theta]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1theta.gif
 [week1der]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1der.gif
+[week2der]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1der.gif
 
 
 
