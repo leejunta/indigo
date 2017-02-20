@@ -1,5 +1,5 @@
 ---
-title: "Week 1 Summary - Linear Regression"
+title: "Week 2 Summary - Regularization"
 layout: post
 date: 2017-02-09
 image: /assets/images/markdown.jpg
@@ -10,8 +10,17 @@ tag:
 - linearregression 
 category: blog
 author: juntaeklee
-description: Implementing linear regression from scratch
+description: Adding a regularization term to regression models 
 # jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.raw.githubusercontent.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
 ---
 
-# Week 2
+# Regularization  
+Given how hard it is to keep members engaged in groups on campus, I'm veeery surprised so many of you showed up again. Maybe I should hold clubs at Grinnell to a higher standard. Anyways, thanks to everyone for showing up again this week. For those who couldn't make it this week, hopefully you can make it to the next meetings. This week we talked about adding regularization terms to regression models. Many of us are also going to the hackathon at ISU next weekend (HackISU), so we discussed potential ideas for products. We can use some of those ideas in the future for projects when we meet as well.
+
+Since HackISU is next weekend and I will be there, we won't be meeting next week. Feel free to use the space (JRC202) to work on data science related projects or to study--the room is reserved from 2-3pm. I will send a reminder email for the week after that. See you all in two weeks!  
+
+# Summary 2017-02-20  
+This week, we talked about regularization. In all of our statistics courses at Grinnell, there is no mention about regularization, but it is an essential concept in data science. You'll see it used in logistic regression models, artificial neural networks, and many other algorithms. We can add a regularization for linear regressions as well, but as we'll find, it is not as useful for simple linear regressions. 
+
+## What is regularization?  
+According to Wikipedia, regularization "refers to a process introducing additional information in order to solve an ill-posed problem or to prevent overfitting." In other words, we use regularization terms to ensure that when we train a model, we do not overfit the model. We want the model to be applicable to data outside of the ones we used to train the model itself.  
