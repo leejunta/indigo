@@ -1,0 +1,17 @@
+---
+title: "Week 1 Summary - Linear Regression"
+layout: post
+date: 2017-02-09
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- datascience
+- GrinellCollege
+- linearregression 
+category: blog
+author: juntaeklee
+description: Implementing linear regression from scratch
+# jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.raw.githubusercontent.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
+---
+
+# Week 2
