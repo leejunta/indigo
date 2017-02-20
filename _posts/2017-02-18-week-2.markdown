@@ -45,6 +45,14 @@ We can then substitute this partial derivative to update our parameters. Now tha
 
 ## Feature Scaling
 But wait--there's more (http://s2.quickmeme.com/img/a7/a78ae76da19c1a0f9e0e9b2f7e6229e70bd36cf7bc5b2f29b5f8900face50234.jpg; RIP Billy Mays). Let's consider a case where our parameters vector `theta` has parameters with vastly different values. For example, let us consider using a linear regression to predict the values of houses. Some obvious features we might use to predict house price are house size, room numbers, and number of bathrooms. Then we might have the following: 
+![Table for House Price Data][week2table]  
+Running a simple linear regression gives us the following values:  
+```
+theta_0 = -68872.3  
+theta_1 = 160.6  
+theta_2 = 8539.7  
+```
+Do you see the problem here? When we use add the regularization term, it will put a larger weight on `theta_0` and then `theta_1` and lastly `theta_2`. However, there is nothing special about `theta_0` other than the fact that the scale used for its respective feature is larger. So how do we go about fixing this problem? We use feature scaling. This is another way of saying *normalization*. You can just create *t* statistics out of out feature in the data set and fead that into the algorithm to weigh each feature equally.  
 
 
 
@@ -53,6 +61,7 @@ But wait--there's more (http://s2.quickmeme.com/img/a7/a78ae76da19c1a0f9e0e9b2f7
 [week1theta]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1theta.gif
 [week1der]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1der.gif
 [week2der]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1der.gif
+[week2table]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week2table.gif
 
 
 
