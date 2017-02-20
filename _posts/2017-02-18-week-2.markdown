@@ -71,7 +71,7 @@ Like I mentioned, we will not be meeting next week because of the hackathon. The
 [week1theta]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1theta.gif
 [week1der]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week1der.gif
 [week2der]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week2der.gif
-[week2table]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week2table.gif
+[week2table]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/week2table.png
 [week2t]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week2t.gif
 
 
