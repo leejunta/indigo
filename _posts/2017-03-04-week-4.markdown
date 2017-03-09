@@ -1,0 +1,67 @@
+---
+title: "Week 4 Summary - Logistic Regression"
+layout: post
+date: 2017-03-04
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- datascience
+- GrinellCollege
+- logisticregression
+category: blog
+author: juntaeklee
+description: Logistic Regression
+# jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.raw.githubusercontent.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
+---
+
+# Logistic Regression
+
+Our group was a little smaller this week, but with all the events happening
+and the Alumni Council visiting campus this weekend, I'm going to assume we're
+still going strong! I guess any size of group works for me since every size of
+groups has its benefits. Anyways, this week we talked about logistic regression,
+the foundation of classification problems.
+
+Next week is the weekend before mid-semester week, so I'm guessing a lot of
+people will not show up. I have no exams or papers (this entire semester) so I
+will still be there working on some projects. Feel free to stop by to chat or
+start thinking about projects you can start working on. I won't be teaching much
+from now on, since I think understanding linear and logistic regression
+thoroughly gets you through the basics of machine learning.
+
+Lastly, Grinnell Pioneer Weekend 2017 just got announced for April 7-9. This is
+a business-hackathon-ish event where you come up with ideas for a startup. The
+judges choose what they think are the best ideas and award $2000, $1000, and
+$500 to the winning three teams. You should definitely check it out!
+
+https://www.facebook.com/events/631020177095955/
+
+That's all I have for you. See you all next weekend or after spring break!
+
+# Summary 2017-03-03
+
+This week, we talked about extending the concepts and framework we learned from
+linear regression into the realm of classification. Logistic regression is the
+most standard/simple method of creating a model to classify data based on
+qualitative categories. I would argue that most classification methods are simply
+extensions of logistic regression. After learning about logistic regression, you
+will have the tools to analyze most of the simple data you would come across.
+
+## What is logistic regression?
+
+Logistic regression is in a family of regression models called the Generalized
+Linear Models, which are extensions of the basic linear regression. The models
+are generally a transformation of the linear regression to fit data in different
+ways.
+
+In the case of logistic regression, we use a *sigmoid* function on the linear
+model.
+
+## What is the sigmoid function?
+
+The sigmoid function is the following:
+![equation1][sigmoid]
+
+# Up next...
+
+[sigmoid]:
