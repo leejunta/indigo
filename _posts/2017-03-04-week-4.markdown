@@ -85,13 +85,20 @@ figure out the cost function and which optimization algorithm to use for it.
 
 For linear regression, we used:  
 ![equation3][linearJ]  
-Let's try it! We can use randomly generated data with one feature to visualize
-the cost function as a function of theta. First, we try this with the regular
+Let's try it! We can use randomly generated data with one feature, its square,
+and its cube to visualize
+the cost function as a function of `theta_1`. First, we try this with the regular
 linear regression:  
 ![graph2][lincostplot]  
 Just as we talked about for linear regression, we get a quadratic curve with a
 clear global minimum. Now let's try using the same cost function but after
 applying the sigmoid function:  
+![graph3][sigcostplot]  
+Notice that there is a local minimum that is not necessarily the global minimum
+when varying `theta_1`. Thus, we need to adapt the cost function so we can reach
+the global optimum better.  
+
+Without going into too much detail, the cost function we use instead is:  
 
 # Up next...
 
@@ -100,4 +107,5 @@ applying the sigmoid function:
 [hypothesis]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week4hypothesis.gif
 [linearJ]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week4linearJ.gif
 [lincostplot]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/week4lincostplot.png
+[sigcostplot]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/week4sigcostplot.png
 
