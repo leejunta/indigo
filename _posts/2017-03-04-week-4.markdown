@@ -98,9 +98,40 @@ Notice that there is a local minimum that is not necessarily the global minimum
 when varying `theta_1`. Thus, we need to adapt the cost function so we can reach
 the global optimum better.  
 
+## What cost function should we use instead?  
+
 Without going into too much detail, the cost function we use instead is:  
-![equation4][logisticcost]
-# Up next...
+![equation4][logisticcost]  
+I would be happy to dicuss where this cost function comes from, but I'm
+realizing how long this summary is already. Ask me if you're curious.  
+
+## How should we optimize our parameters `theta`?  
+
+Similar to linear regression, we can use batch gradient descent to optimize our
+parameters. Here's what we used in linear regression:  
+```
+repeat {
+        theta = theta - alpha*der
+}
+```
+where `alpha` is the step parameter and `der` is the derivative of the cost
+function. The derivative of our cost function is:  
+![equation5][logder]  
+There are other optimization algorithms, but you can explore those in your own
+time if needed. Here are a few: conjugate gradient, BFGS.
+
+## Final Notes  
+
+Don't forget to feature scale before optimizing. I wasn't very detailed about
+the last few steps because I realized the summary was too long already. Let me
+know if you have any questions about those last few steps. I can explain in
+detail as needed.
+
+# Up next.  
+
+Next week, we will talk about evaluation metrics to judge how good your model
+is. This will be particularly useful for classification problems since there are
+other factors we need to consider for classification problems.
 
 [sigmoid]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week4sigmoid.gif
 [sigmoidplot]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/week4sigmoidplot.png
@@ -109,4 +140,5 @@ Without going into too much detail, the cost function we use instead is:
 [lincostplot]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/week4lincostplot.png
 [sigcostplot]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/week4sigcostplot.png
 [logisticcost]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week4logisticcost.gif
+[logder]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week4logder.gif
 
