@@ -85,6 +85,7 @@ figure out the cost function and which optimization algorithm to use for it.
 
 For linear regression, we used:  
 ![equation3][linearJ]  
+Let's try it!
 
 # Up next...
 
