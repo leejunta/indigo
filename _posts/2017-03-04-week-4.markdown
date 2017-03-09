@@ -64,8 +64,27 @@ The sigmoid function is the following:
 If you aren't a math-person, this probably does not mean much to you, so here's
 a visual to better understand it:
 ![graph1][sigmoidplot].
+Notice that the output (range) of the sigmoid function is from 0 to 1 exclusive
+(without 0 or 1). We can then use this function to represent the probability of
+a data observation being a 0 or a 1, depending on how 0 and 1 are defined.
+
+## How do we apply the sigmoid function to linear regression?
+
+That's simple; just apply the sigmoid function to a linear model.
+We learned in previous weeks that the matrix multiplication of `X` and `theta`
+is the vector representing the prediction of a linear regression model. Applying
+the sigmoid function to `X*theta`, we get a new hypothesis function:
+![equation2][hypothesis].
+Based on our training data `X` and parameters `theta`, our hypothesis function
+generates the probability that each observation will correspond to `1`.
+
+Now that we have a general idea of how the logistic regression works, we can
+figure out the cost function and which optimization algorithm to use for it.
+
+## What does the cost function look like?
 
 # Up next...
 
 [sigmoid]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week4sigmoid.gif
 [sigmoidplot]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/week4sigmoidplot.png
+[hypothesis]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week4hypothesis.gif
