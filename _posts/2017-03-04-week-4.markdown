@@ -60,8 +60,12 @@ model.
 ## What is the sigmoid function?
 
 The sigmoid function is the following:
-![equation1][sigmoid]
+![equation1][sigmoid].
+If you aren't a math-person, this probably does not mean much to you, so here's
+a visual to better understand it:
+![graph1][sigmoidplot].
 
 # Up next...
 
-[sigmoid]:
+[sigmoid]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/equations/week4sigmoid.gif
+[sigmoidplot]: https://raw.githubusercontent.com/leejunta/juntaeklee/gh-pages/assets/R/week4sigmoidplot.png
