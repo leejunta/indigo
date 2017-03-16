@@ -16,7 +16,7 @@ resume: false
 resume-external: false
 resume-url: https://google.com/?q=my+resume
 
-url: https://juntaeklee.com #https://leejunta.github.io/juntaeklee
+url: http://juntaeklee.com #https://leejunta.github.io/juntaeklee
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -98,4 +98,4 @@ gems:
 
 jekyll-mentions:
     base_url: "/juntaeklee"
-    url: https://juntaeklee.com #"http://leejunta.github.io" 
+    url: http://juntaeklee.com #"http://leejunta.github.io" 
