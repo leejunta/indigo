@@ -1,0 +1,75 @@
+---
+title: "Week 5 Summary - Building Data Products"
+layout: post
+date: 2017-03-11
+image: /assets/images/markdown.jpg
+headerImage: false
+tag:
+- datascience
+- GrinellCollege
+- DataProducts
+category: blog
+author: juntaeklee
+description: Building data products
+# jemoji: '<img class="emoji" title=":ramen:" alt=":ramen:" src="https://assets.raw.githubusercontent.com/images/icons/emoji/unicode/1f35c.png" height="20" width="20" align="absmiddle">'
+---
+
+# Building a Product  
+
+At the end of last week, I said that I would bring some data in this week, so we
+can start building simple models for experience. On second thought, that sounds
+boring. Instead, I decided we should dive into a more complicated project with
+multiple steps along the way. We'll just learn what we need to along the way and
+build on the product every week as a whole group through github.  
+
+So we just starting brainstorming about what projects we can work on after
+spring break. We decided that a useful and doable product would be one that can
+estimate how long it will take to read given text by examining the number of
+words, difficulty level of the words, difficulty of the sentence structure, etc.
+We came up with the name **ReadforSpeed** lol.  
+
+We haven't started anything, but I created an empty Github page and wrote basic
+instructions on how to use git bash:
+
+https://github.com/leejunta/ReadforSpeed  
+
+## Git Bash  
+*I'll be brief with this one since most people know/have used Github.* Github is
+a web-based version control service. Essentially, you can make projects (called
+repositories) and every time you commit to a change, Github maintains a record
+of what has been changed. This is useful for group projects, since every member
+can see what changes have been made on any file.  
+
+Here's how to get started:  
+1) Create a Github account (https://github.com)  
+2) Download Git (https://git-scm.com/downloads)  
+3) Open Git Bash (through terminal on Macs)  
+4) Configure your git settings for identification when you make changes on a
+repository (only for first-time users)
+```
+git config --global user.name "YourFirstName YourLastName"  
+git config --global user.email youremail@example.com  
+```
+
+Now for when you want to work on a repository:  
+1) Start Git Bash  
+2) `cd PATHTODIRECTORY`
+3) `git init` (initialize git)
+4) `git clone https://github.com/TheUserName/TheRepositoryName` (copies the
+repository to your computer)  
+5) Edit or add files to the repository  
+6) `git add .` (adds all files)  
+7) `git commit -am "comments about what you did"` (documenting what you did)  
+8) `git push` (push your changes to the online repository
+
+If you need to match your local repository to the one on Github, go to the local
+directory and type `git pull https://github.com/TheUserName/TheRepositoryName`  
+
+Great! Now you know the basics of Github. You are now part of a huge Github
+community that shares code and other aspects of projects together!  
+
+# Up next...  
+
+After spring break, we'll start building the product we talked about. Have a
+great spring break!
+
