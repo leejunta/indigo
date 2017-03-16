@@ -33,7 +33,7 @@ instructions on how to use git bash:
 
 <https://github.com/leejunta/ReadforSpeed>  
 
-## Git Bash  
+## Github  
 *I'll be brief with this one since most people know/have used Github.* Github is
 a web-based version control service. Essentially, you can make projects (called
 repositories) and every time you commit to a change, Github maintains a record
@@ -41,8 +41,8 @@ of what has been changed. This is useful for group projects, since every member
 can see what changes have been made on any file.  
 
 Here's how to get started:  
-1) Create a Github account (https://github.com)  
-2) Download Git (https://git-scm.com/downloads)  
+1) Create a Github account (<https://github.com>)  
+2) Download Git (<https://git-scm.com/downloads>)  
 3) Open Git Bash (through terminal on Macs)  
 4) Configure your git settings for identification when you make changes on a
 repository (only for first-time users)
