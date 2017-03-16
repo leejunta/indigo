@@ -31,7 +31,7 @@ We came up with the name **ReadforSpeed** lol.
 We haven't started anything, but I created an empty Github page and wrote basic
 instructions on how to use git bash:
 
-https://github.com/leejunta/ReadforSpeed  
+<https://github.com/leejunta/ReadforSpeed>  
 
 ## Git Bash  
 *I'll be brief with this one since most people know/have used Github.* Github is
@@ -53,17 +53,18 @@ git config --global user.email youremail@example.com
 
 Now for when you want to work on a repository:  
 1) Start Git Bash  
-2) `cd PATHTODIRECTORY`
-3) `git init` (initialize git)
+2) `cd PATHTODIRECTORY`  
+3) `git init` (initialize git)  
 4) `git clone https://github.com/TheUserName/TheRepositoryName` (copies the
 repository to your computer)  
 5) Edit or add files to the repository  
 6) `git add .` (adds all files)  
 7) `git commit -am "comments about what you did"` (documenting what you did)  
-8) `git push` (push your changes to the online repository
+8) `git push` (push your changes to the online repository)  
 
 If you need to match your local repository to the one on Github, go to the local
-directory and type `git pull https://github.com/TheUserName/TheRepositoryName`  
+directory and type  
+`git pull https://github.com/TheUserName/TheRepositoryName`  
 
 Great! Now you know the basics of Github. You are now part of a huge Github
 community that shares code and other aspects of projects together!  
