@@ -98,4 +98,4 @@ gems:
 
 jekyll-mentions:
     base_url: "/juntaeklee"
-    url: "http://leejunta.github.io" 
+    url: https://juntaeklee.com #"http://leejunta.github.io" 
