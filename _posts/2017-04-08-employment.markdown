@@ -73,9 +73,26 @@ variables of highest importance are related to employment.
 Approximately a quarter (24.2%) of people in the weighted data identified as
 being unemployed. However, 71% of people with disabilities were unemployed.
 In contrast, only 17% of people without any disabilities were unemployed. Only
-13% of people in the survey had disabilities but comprised of almost 40% of the
-unemployed group.   
-![Disability Mosaic][fig:disa]
+13% of people in the survey had disabilities, but they comprised of almost 40% of the
+unemployed group.  
+![Disability Mosaic][fig:disa]  
+Title I of the Americans with Disabilities Act Amendments Act (ADAAA) requires 
+employers to provide reasonable accomodations to qualified applicants or
+employees, with the exception of companies with fewer than 15 employees (ADA). The data 
+suggests that either accomodations are insufficient, employers are not complying
+with this law, or people with disabilities are unqualified for most available
+jobs. I am willing to bet that Stephen Hawking with disagree with the last
+consideration. Furthermore, based on the income distribution (this feature was
+not included in the Random Forest), people with disabilities consistently
+represent a larger proportion of the lower income class and smaller proportion of the
+higher income class.  
+![Disability Income][fig:disinc]  
+According to the US Census Bureau, nearly 1 in 5 people in the US have a
+disability. Surely, better accomodations and/or stronger regulations to provide
+accomodations for people with disability are necessary. The fact that disability
+status is the strongest indicator of employment status in our model (or any
+resonable model, for that matter) is highly problematic.
 
 [fig:varimp]: https://raw.githubusercontent.com/leejunta/Employment/master/figures/varimp.png
 [fig:disa]: https://raw.githubusercontent.com/leejunta/Employment/master/figures/disability.png
+[fig:disinc]: https://raw.githubusercontent.com/leejunta/Employment/master/figures/income.png
